@@ -357,6 +357,75 @@ extension Float: FloatMathematical
 	public static func pow(_ lh: Float, _ rh: Float) -> Float
 		{ return Glibc.pow(lh, rh) }
 }
+#elseif canImport(Foundation)
+import Foundation
+extension Double: FloatMathematical
+{
+	public static func exp(_ x: Double) -> Double
+		{ return Foundation.exp(x) }
+	public static func log(_ x: Double) -> Double
+		{ return Foundation.log(x) }
+	public static func sin(_ x: Double) -> Double
+		{ return Foundation.sin(x) }
+	public static func cos(_ x: Double) -> Double
+		{ return Foundation.cos(x) }
+	public static func tan(_ x: Double) -> Double
+		{ return Foundation.tan(x) }
+	public static func asin(_ x: Double) -> Double
+		{ return Foundation.asin(x) }
+	public static func acos(_ x: Double) -> Double
+		{ return Foundation.acos(x) }
+	public static func atan(_ x: Double) -> Double
+		{ return Foundation.atan(x) }
+	public static func sinh(_ x: Double) -> Double
+		{ return Foundation.sinh(x) }
+	public static func cosh(_ x: Double) -> Double
+		{ return Foundation.cosh(x) }
+	public static func tanh(_ x: Double) -> Double
+		{ return Foundation.tanh(x) }
+	public static func asinh(_ x: Double) -> Double
+		{ return Foundation.asinh(x) }
+	public static func acosh(_ x: Double) -> Double
+		{ return Foundation.acosh(x) }
+	public static func atanh(_ x: Double) -> Double
+		{ return Foundation.atanh(x) }
+	public static func pow(_ lh: Double, _ rh: Double) -> Double
+		{ return Foundation.pow(lh, rh) }
+}
+
+extension Float: FloatMathematical
+{
+	public static func exp(_ x: Float) -> Float
+		{ return Foundation.exp(x) }
+	public static func log(_ x: Float) -> Float
+		{ return Foundation.log(x) }
+	public static func sin(_ x: Float) -> Float
+		{ return Foundation.sin(x) }
+	public static func cos(_ x: Float) -> Float
+		{ return Foundation.cos(x) }
+	public static func tan(_ x: Float) -> Float
+		{ return Foundation.tan(x) }
+	public static func asin(_ x: Float) -> Float
+		{ return Foundation.asin(x) }
+	public static func acos(_ x: Float) -> Float
+		{ return Foundation.acos(x) }
+	public static func atan(_ x: Float) -> Float
+		{ return Foundation.atan(x) }
+	public static func sinh(_ x: Float) -> Float
+		{ return Foundation.sinh(x) }
+	public static func cosh(_ x: Float) -> Float
+		{ return Foundation.cosh(x) }
+	public static func tanh(_ x: Float) -> Float
+		{ return Foundation.tanh(x) }
+	public static func asinh(_ x: Float) -> Float
+		{ return Foundation.asinh(x) }
+	public static func acosh(_ x: Float) -> Float
+		{ return Foundation.acosh(x) }
+	public static func atanh(_ x: Float) -> Float
+		{ return Foundation.atanh(x) }
+	public static func pow(_ lh: Float, _ rh: Float) -> Float
+		{ return Foundation.pow(lh, rh) }
+}
 #endif
 /*
 extension CGFloat: FloatMathematical
