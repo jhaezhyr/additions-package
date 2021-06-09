@@ -535,23 +535,23 @@ infix operator <≈: ComparisonPrecedence// { associativity none precedence 130 
 
 infix operator **: BitwiseShiftPrecedence// { associativity right precedence 160 }
 /// Power operator
-public func ** (base: Double, exponent: Double) -> Double
-	{ return pow(base, exponent) }
+public func ** (_ base: Double, _ exponent: Double) -> Double
+	{ return Double.pow(base, exponent) }
 /// Power operator
 /*public func ** (base: CGFloat, exponent: CGFloat) -> CGFloat
 	{ return pow(base, exponent) }*/
 /// Power operator
 public func ** (base: Float, exponent: Float) -> Float
-	{ return pow(base, exponent) }
+	{ return Float.pow(base, exponent) }
 /// Power operator
 public func ** (base: Double, exponent: Int) -> Double
-	{ return pow(base, Double(exponent)) }
+	{ return Double.pow(base, Double(exponent)) }
 /// Power operator
 /*public func ** (base: CGFloat, exponent: Int) -> CGFloat
 	{ return pow(base, CGFloat(exponent)) }*/
 /// Power operator
 public func ** (base: Float, exponent: Int) -> Float
-	{ return pow(base, Float(exponent)) }
+	{ return Float.pow(base, Float(exponent)) }
 /*
 postfix operator *
 public postfix func * <T> (x: UnsafePointer<T>) -> T

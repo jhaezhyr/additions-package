@@ -11,19 +11,6 @@ import XCTest
 
 class Additions_Tests: XCTestCase
 {
-    
-    override func setUp()
-	{
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown()
-	{
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-	
 	func	testIntegerFormat()
 	{
 		let myTestString = "Join us, one and all!"
@@ -47,5 +34,10 @@ class Additions_Tests: XCTestCase
 			XCTAssert((-π...π).contains(angle.piInterval))
 		}
 	}
+
+    static var allTests = [
+        ("testAngleFunctions", testAngleFunctions),
+        ("testIntegerFormat", testIntegerFormat),
+    ]
 }
 

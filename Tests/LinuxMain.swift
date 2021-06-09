@@ -1,5 +1,4 @@
 import XCTest
-
 import AdditionsTests
 
 var tests = [XCTestCaseEntry]()

@@ -356,14 +356,14 @@ public func cos(_ x: Angle) -> Angle.Raw		{ return cos(x.radians) }
 public func cosh(_ x: Angle) -> Angle.Raw		{ return cosh(x.radians) }
 public func tan(_ x: Angle) -> Angle.Raw		{ return tan(x.radians) }
 public func tanh(_ x: Angle) -> Angle.Raw		{ return tanh(x.radians) }
-
+/*
 public func	asin(_ x: Angle.Raw) -> Angle		{ return Angle(asin(x) as Angle.Raw) }
 public func	asinh(_ x: Angle.Raw) -> Angle	{ return Angle(asinh(x) as Angle.Raw) }
 public func	acos(_ x: Angle.Raw) -> Angle		{ return Angle(acos(x) as Angle.Raw) }
 public func	acosh(_ x: Angle.Raw) -> Angle	{ return Angle(acosh(x) as Angle.Raw) }
 public func	atan(_ x: Angle.Raw) -> Angle		{ return Angle(atan(x) as Angle.Raw) }
 public func	atanh(_ x: Angle.Raw) -> Angle	{ return Angle(atanh(x) as Angle.Raw) }
-
+*/
 //public func fabs(_ x: Angle) -> Angle					{ return Angle(fabs(x.radians)) }
 //public func fma(_ x: Angle, y: Angle, z: Angle) -> Angle	{ return Angle(fma(x.radians, y.radians, z.radians)) }
 //public func fmax(_ lhs: Angle, rhs: Angle) -> Angle	{ return Angle(fmax(lhs.radians, rhs.radians)) }
