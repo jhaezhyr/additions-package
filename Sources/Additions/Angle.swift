@@ -304,15 +304,8 @@ extension Angle {
 }
 
 extension Angle {
-
-	/// The hash value.
-	///
-	/// **Axiom:** `x == y` implies `x.hashValue == y.hashValue`
-	///
-	/// **Note:** the hash value is not guaranteed to be stable across
-	/// different invocations of the same program.  Do not persist the
-	/// hash value across program runs.
-	public var hashValue: Int { return radians.hashValue }
+	public func hash(into hasher: inout Hasher)
+    { self.radians.hash(into: &hasher) }
 }
 
 extension Angle
@@ -325,7 +318,7 @@ extension Angle
 extension Angle
 {
 	/// Create an instance initialized to `value`.
-	init(integerLiteral value: Int)
+	public init(integerLiteral value: Int)
 		{ radians = Raw(value) }
 }
 
@@ -458,7 +451,7 @@ public func	% (lh: Angle, rh: Angle) -> Angle
 		{ return Angle(result) }
 }
 
-public extension Angle
+extension Angle
 {
 	public func	arithmeticInverse() -> Angle
 		{ return Angle(1 / radians) }
