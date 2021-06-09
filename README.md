@@ -1,3 +1,3 @@
-# AdditionsPackage
+# Additions
 
-A description of this package.
+This includes what seems to be missing from Swift.
