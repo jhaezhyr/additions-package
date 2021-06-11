@@ -702,7 +702,8 @@ public struct Unowned<T: AnyObject>
 	public init(_ t: T)
 		{ value = t }
 }
-
+/*
+// This makes the ubunutu swift 5.4.1 compiler crash!
 extension Array where Element: AnyObject
 {
 	public var weak: [Weak<Element>]
@@ -710,7 +711,7 @@ extension Array where Element: AnyObject
 	public var unowned: [Unowned<Element>]
 		{ return map { Unowned($0) } }
 }
-
+*/
 
 // MARK:  - Optional Extensions
 

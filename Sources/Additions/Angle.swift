@@ -350,7 +350,7 @@ extension Angle//: Strideable
 }
 
 
-public func sin(_ x: Angle) -> Angle.Raw		{ return sin(x.radians) }
+public func sin(_ x: Angle) -> Angle.Raw		{ return Angle.Raw.sin(x.radians) }
 public func sinh(_ x: Angle) -> Angle.Raw		{ return sinh(x.radians) }
 public func cos(_ x: Angle) -> Angle.Raw		{ return cos(x.radians) }
 public func cosh(_ x: Angle) -> Angle.Raw		{ return cosh(x.radians) }
